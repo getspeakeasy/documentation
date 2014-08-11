@@ -65,8 +65,34 @@ NSDictionary *dimensions = @{
 ```
 
 ### Viewed create screen
+```
+NSDictionary *dimensions = @{
+    @"loc" : @"create",
+    @"pos" : @"button",
+};
+[PFAnalytics trackEvent:@"tab", dimensions: dimensions];
+```
+
 ### Chose a font
+```
+NSDictionary *dimensions = @{
+    @"loc" : @"font",
+    @"pos" : @"select",
+    @"target" : @"{fontname}"
+};
+[PFAnalytics trackEvent:@"tab", dimensions: dimensions];
+```
+
 ### Used background template 
+```
+NSDictionary *dimensions = @{
+    @"loc" : @"font",
+    @"pos" : @"select",
+    @"target" : @"{fontname}"
+};
+[PFAnalytics trackEvent:@"tab", dimensions: dimensions];
+```
+
 ### Chose image search
 ### Ran manual search query for image
 ### Removed background image
